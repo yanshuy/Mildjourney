@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+}
+
+html,
+body {
+    font-size: 69%;
+    height: 100%;
+    width: 100%;
+}
+
+:root {
+    --hotpink: rgb(11, 106, 0);
+}
+
+::selection {
+    background-color: var(--hotpink);
+    color: white;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    padding: 1.2rem 2rem;
+    z-index: 20;
+}
+
+header .logo {
+    font-size: 3rem;
+    -webkit-text-stroke: 0.8px;
+    -webkit-text-stroke-color: white;
+    color: transparent;
+    margin-right: auto;
+}
+
+header .logo i {
+    -webkit-text-stroke: 0.5px;
+    -webkit-text-stroke-color: var(--hotpink);
+    font-size: 4rem;
+    padding: 0 0.5rem;
+    color: var(--hotpink);
+}
+
+.dojo {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(gallery\ bg.jpg);
+    background-size: cover;
+    background-position-y: 33%;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 2rem;
+}
+
+.dojo h1 {
+    font-size: 6rem;
+    color: #eee;
+    text-align: center;
+    z-index: 10;
+}
+
+.dojo form {
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    width: 80rem;
+    border-radius: 5rem;
+    background: white;
+    margin: 2rem 0;
+    z-index: 10;
+}
+
+.dojo form #home-search {
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: large;
+    background: transparent;
+    padding: 0 1.7rem;
+    color: #333;
+}
+
+.dojo form label {
+    font-size: 2.5rem;
+    margin: 0 1.7rem;
+    cursor: pointer;
+}
+
+.dojo form label:hover {
+    color: var(--hotpink);
+}
+
+.dojo .suggestions {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+    z-index: 10;
+}
+
+.dojo .suggestions li {
+    color: #eee;
+    margin: 0.2rem 0.7rem;
+    font-size: 2rem;
+}
+
+.dojo .suggestions li a {
+    color: #ccc;
+    /* text-transform: lowercase; */
+}
+
+.dojo .suggestions li a:hover {
+    color: var(--hotpink);
+}
+
+.gallery {
+    column-count: 3;
+    padding: 0rem 5%;
+}
+
+.gallery #img1{
+    padding-top: 2rem;
+}
+
+.gallery #img6{
+    padding-top: 3rem;
+}
+
+.gallery #img11{
+    padding-top: 3rem;
+}
+
+.gallery .box {
+    /* background-color: blue; */
+    padding: 1rem;
+    margin: 1rem;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.gallery .box img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.gallery .box:hover img {
+    scale: 1.2;
+    -webkit-filter: brightness(65%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.gallery .box .info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    opacity: 0;
+    /* background-color: aqua; */
+}
+
+.gallery .box:hover .info {
+    opacity: 1;
+}
+
+.gallery .box .info .fa-download {
+    margin: 2rem 2.2rem;
+    background: #ffffff;
+    color: #333;
+    font-size: 2rem;
+    padding: 1.2rem 2.2rem;
+    box-shadow: 0 .1rem .2rem rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.gallery .box .info .fa-download:hover {
+    background: var(--hotpink);
+    color: #eee;
+}
+
+.gallery .box .info .links {
+    padding-right: 1rem;
+}
+
+.gallery .box .info .links a {
+    font-size: 2rem;
+    margin: 3rem 1rem;
+    text-shadow: 0 .1rem .1rem #000;
+    color: #ffffff;
+}
+
+/* -webkit-text-stroke: 2px red;
+    color: red; */
+
+
+.gallery .box .info .links :nth-child(1):hover {
+    /* background-image: url("https://www.solidbackgrounds.com/images/1920x1080/1920x1080-red-solid-color-background.jpg");
+    Background-size: Cover;
+    Background-position: Center;
+    Background-clip: text;
+    -webkit-background-clip: text; */
+    color: #FF3040;
+    font-size: 2.5rem;
+}
+
+.gallery .box .info .links :nth-child(2):hover {
+    font-size: 2.5rem;
+}
+
+.gallery .box .info .links :nth-child(3):hover{
+    color: #0284FE;
+    font-size: 2.5rem;
+}
+
+
+header form {
+    display: none;
+    margin-right: auto;
+}
+
+header form #search {
+    height: 4rem;
+    width: 40rem;
+    padding: 0 1rem;
+    font-size: 1.7rem;
+    border: none;
+    border-radius: 20px 0 0 20px;
+}
+
+header label {
+    height: 4rem;
+    width: 5rem;
+    line-height: 4rem;
+    text-align: center;
+    font-size: 1.7rem;
+    background-color: #333;
+    color: white;
+    border-radius: 0px 20px 20px 0px;
+    cursor: pointer;
+}
+
+header label:hover {
+    background: var(--hotpink);
+}
+
+header.header-active {
+    background: #121713;
+}
+
+header.header-active form {
+    display: flex;
+    margin-right: auto;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header nav ul a {
+    color: white;
+    font-size: 2rem;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul a:hover {
+    color: var(--hotpink);
+}
+
+button {
+    margin-left: 1.7rem;
+    font-size: 2rem;
+    background-color: var(--hotpink);
+    padding: 6px 15px 7px 15px;
+    border-radius: 25px;
+    border: none;
+}
+
+button a {
+    color: white;
+    text-transform: lowercase;
+}
+
+button:hover {
+    background-color: white;
+}
+
+button a:hover {
+    color: #333;
+}
+
+header #menu {
+    font-size: 3rem;
+    cursor: pointer;
+    display: none;
+}
+
+.more{
+    margin: 0 auto;
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    height: 4rem;
+    width: 20rem;
+    background: var(--hotpink);
+    color: white;
+    border-radius: 5rem;
+    line-height: 4rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.more:hover{
+    letter-spacing: .1rem;
+    background: #333;
+}
+
+#for-cursor {
+    height: 20px;
+    width: 20px;
+    background-color: #95C11e;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 99;
+}
+
+#for-cursor-blur {
+    height: 400px;
+    width: 400px;
+    background-color: #96c11e44;
+    border-radius: 50%;
+    position: fixed;
+    filter: blur(40px);
+    z-index: 1;
+}
+
+.cursor{
+    display: none;
+}
+
+.cursor-blur{
+    display: none;
+}
+
+*::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #121713;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: var(--hotpink);
+    border-radius: 5px;
+}
+
+@media (max-width:992px) {
+
+    html,
+    body {
+        font-size: 59%;
+    }
+
+    header form #search {
+        width: 100%;
+    }
+
+    .gallery{
+        column-count: 2;
+    }
+
+    .gallery #img6{
+        padding-top: 0rem;
+    }
+    
+    .gallery #img11{
+        padding-top: 0rem;
+    }
+
+    .gallery #img8{
+        padding-top: 3rem;
+    }
+
+}
+
+@media (max-width:768px) {
+
+    html,
+    body {
+        font-size: 55%;
+    }
+
+    header #menu {
+        display: block;
+    }
+
+    header .navbar {
+        position: fixed;
+        top: 6rem;
+        right: -100%;
+        height: 100vh;
+        background: white;
+        width: 35rem;
+
+    }
+
+    header .navbar ul {
+        padding-top: 4rem;
+        flex-flow: column;
+    }
+
+    header .navbar ul li {
+        width: 100%;
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+    header .navbar ul li a {
+        font-size: 2.5rem;
+        color: #333;
+    }
+
+    .fa-times {
+        animation-name: rot;
+        animation-iteration-count: 1;
+        animation-delay: 0s;
+        animation-duration: 0.5s;
+    }
+
+    @keyframes rot {
+        0% {
+            rotate: 0deg;
+        }
+
+        100% {
+            rotate: 180deg;
+        }
+    }
+
+    header .nav-toggle {
+        right: 0%;
+    }
+
+    .dojo form {
+        width: 100%;
+    }
+
+    .gallery{
+        column-count: 1;
+    }
+
+    .gallery #img6{
+        padding-top: 0rem;
+    }
+    
+    .gallery #img11{
+        padding-top: 0rem;
+    }
+
+}
+
+@media (max-width:600px) {
+
+    html,body{
+        height: 100%;
+        width: 100.5%;
+    }
+
+    header form {
+        display: none !important;
+    }
+
+    header #menu {
+        order: 1;
+    }
+
+    header .navbar {
+        width: 100%;
+    }
+
+    button {
+        margin-right: 2rem;
+    }
+
+    .dojo h1 {
+        font-size: 4rem;
+    }
+}
