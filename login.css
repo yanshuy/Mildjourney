@@ -1,0 +1,147 @@
+:root {
+    --theme: rgb(55, 56, 58);
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: auto;
+    background-image: url("./media/seaotter.jpg");
+    background-repeat: no-repeat ;
+    background-size: 100vw;
+    background-position-y: 30%;
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 35rem;
+    height: 28rem;
+    background: transparent;
+    border: 2px solid #ffffff57;
+    border-radius: 20px;
+    backdrop-filter: blur(70px);
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+}
+
+form{
+    width: 100%;
+    padding: 8rem;
+}
+
+form h1{
+    font-size: 2rem;
+    color: var(--theme);
+    text-align: center;
+}
+
+.input{
+    position: relative;
+    width: 100%;
+    height: 3.5rem;
+    border-bottom: 2px solid var(--theme);
+    margin: 2rem 0;
+}
+
+.input label{
+    position: absolute;
+    top: 50%;
+    left: .5rem;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    color: var(--theme);
+    font-weight: 500;
+    pointer-events: none;
+    transition: all ease .5s;
+}
+
+.input input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 0 2rem 0 .5rem;
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+
+.input .icon{
+    position: absolute;
+    right: .5rem;
+    font-size: 1.2rem;
+    color: var(--theme);
+    line-height: 3.5rem;
+}
+
+.input input:focus~label{
+    top: 0.2rem;
+}
+
+.remember-forgot{
+    font-size: 1rem;
+    color: var(--theme);
+    font-weight: 500;
+    margin: -1rem 0 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forgot label input{
+    color: black;
+    accent-color: rgb(255, 58, 101);
+    margin-right: 0.3rem;
+}
+
+.remember-forgot a{
+    color: var(--theme);
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+.button{
+    width: 100%;
+    height: 2.8rem;
+    border-radius: .3rem;
+    outline: none;
+    border: none;
+    background: var(--theme);
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #d4d4d4;
+}
+
+.registration{
+    font-size: 1rem;
+    color: var(--theme);
+    text-align: center;
+    font-weight: 500;
+    margin: 2rem 0 0 0;
+}
+
+.registration p a{
+    margin-left: 0.3rem;
+    font-weight: 600;
+    color: var(--theme);
+}
+
+.registration p a:hover{
+    text-decoration: underline;
+}

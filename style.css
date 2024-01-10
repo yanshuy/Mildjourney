@@ -18,11 +18,11 @@ body {
 }
 
 :root {
-    --hotpink: rgb(11, 106, 0);
+    --theme: rgb(11, 106, 0);
 }
 
 ::selection {
-    background-color: var(--hotpink);
+    background-color: var(--theme);
     color: white;
 }
 
@@ -45,10 +45,10 @@ header .logo {
 
 header .logo i {
     -webkit-text-stroke: 0.5px;
-    -webkit-text-stroke-color: var(--hotpink);
+    -webkit-text-stroke-color: var(--theme);
     font-size: 4rem;
     padding: 0 0.5rem;
-    color: var(--hotpink);
+    color: var(--theme);
 }
 
 .dojo {
@@ -99,7 +99,7 @@ header .logo i {
 }
 
 .dojo form label:hover {
-    color: var(--hotpink);
+    color: var(--theme);
 }
 
 .dojo .suggestions {
@@ -122,7 +122,7 @@ header .logo i {
 }
 
 .dojo .suggestions li a:hover {
-    color: var(--hotpink);
+    color: var(--theme);
 }
 
 .gallery {
@@ -194,7 +194,7 @@ header .logo i {
 }
 
 .gallery .box .info .fa-download:hover {
-    background: var(--hotpink);
+    background: var(--theme);
     color: #eee;
 }
 
@@ -260,7 +260,7 @@ header label {
 }
 
 header label:hover {
-    background: var(--hotpink);
+    background: var(--theme);
 }
 
 header.header-active {
@@ -289,13 +289,13 @@ header nav ul li {
 }
 
 header nav ul a:hover {
-    color: var(--hotpink);
+    color: var(--theme);
 }
 
 header button {
     margin-left: 1.7rem;
     font-size: 2rem;
-    background-color: var(--hotpink);
+    background-color: var(--theme);
     padding: 6px 15px 7px 15px;
     border-radius: 25px;
     border: none;
@@ -327,7 +327,7 @@ header #menu {
     margin-bottom: 3rem;
     height: 4rem;
     width: 20rem;
-    background: var(--hotpink);
+    background: var(--theme);
     color: white;
     border-radius: 5rem;
     line-height: 4rem;
@@ -377,7 +377,7 @@ header #menu {
 }
 
 *::-webkit-scrollbar-thumb {
-    background: var(--hotpink);
+    background: var(--theme);
     border-radius: 5px;
 }
 
@@ -399,7 +399,7 @@ header #menu {
 }
 
 .footer .box-container .box h3{
-    color: var(--hotpink);
+    color: var(--theme);
     font-size: 2.5rem;
 }
 
@@ -441,7 +441,7 @@ header #menu {
     font-size: 1.7rem;
     color: #ffffff;
     border: none;
-    background-color: var(--hotpink);
+    background-color: var(--theme);
     cursor: pointer;
 }
 
